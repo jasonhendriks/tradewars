@@ -199,6 +199,21 @@
             </plugins>
         </pluginManagement>
         <plugins>
+            <!-- Build an executable JAR -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>${maven-dependency-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <!-- enforce a minimum maven version -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
