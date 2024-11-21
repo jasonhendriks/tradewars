@@ -4,7 +4,7 @@ A modern web-based homage to [TradeWars](https://en.wikipedia.org/wiki/Trade_War
 role-playing,
 online, multiplayer games from the BBS era.
 
-Try it out online:
+Try it out online: https://floating-peak-86981-45f021e67352.herokuapp.com
 
 ## Requirements
 
@@ -36,7 +36,7 @@ mvn versions:display-plugin-updates
 
 ```
 $ mvn install
-$ mvn spring-boot:run -pl web
+$ mvn spring-boot:run
 ```
 
 Then access the application in your web browser: http://localhost:8080
