@@ -1,0 +1,4 @@
+spring:
+  data:
+    redis:
+      url: "${REDIS_URL}"
