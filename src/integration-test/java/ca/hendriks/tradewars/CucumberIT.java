@@ -1,5 +1,6 @@
 package ca.hendriks.tradewars;
 
+import ca.hendriks.tradewars.security.user.UserRepository;
 import io.cucumber.spring.CucumberContextConfiguration;
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;
@@ -8,6 +9,8 @@ import org.junit.platform.suite.api.Suite;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.boot.test.mock.mockito.MockBeans;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -26,6 +29,9 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
         classes = {CucumberIT.Config.class, Main.class},
         properties = {"cucumber.publish.enabled=true"})
 @EnableAutoConfiguration(exclude = RedisAutoConfiguration.class)
+@MockBeans(
+        @MockBean(UserRepository.class)
+)
 public class CucumberIT {
 
     @ComponentScan
