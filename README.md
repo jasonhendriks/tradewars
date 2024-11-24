@@ -21,7 +21,7 @@ Try it out online: https://tradewars-c2d3d73aea9e.herokuapp.com
     ```
 2. Populate the `REDIS_URL` environment variable
     ```
-    export REDIS_URL=
+    export REDIS_URL=redis://username:password@example-host:6379
     ```
 
 3. [Optional] If you installed the Heroku CLI, connect your local repository to Heroku:
@@ -84,20 +84,21 @@ General
 - https://www.baeldung.com/thymeleaf-select-option
 - https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#including-template-fragments
 - https://testcontainers.com/guides/getting-started-with-testcontainers-for-java/
-- https://www.reddit.com/r/htmx/comments/196gwsa/you_can_do_so_much_with_hxboost_hxindicator_and/
+- [You can do so much with hx-boost, hx-indicator, and simple forms / links @ Reddit](https://www.reddit.com/r/htmx/comments/196gwsa/you_can_do_so_much_with_hxboost_hxindicator_and/)
 
 Heroku
 
 - https://devcenter.heroku.com/articles/java-session-handling-on-heroku
-- https://devcenter.heroku.com/articles/heroku-redis
 
 Redis
 
+- https://devcenter.heroku.com/articles/heroku-redis
 - https://www.baeldung.com/spring-data-redis-tutorial
 - [Password is not used from spring.data.redis.url property without username #35850](https://github.com/spring-projects/spring-boot/issues/35850)
 - [Embedded Redis Server with Spring Boot Test](https://www.baeldung.com/spring-embedded-redis)
 - [EmbeddedRedis Support For Spring Framework](http://www.kenansevindik.com/en/embeddedredis-support-for-spring-framework/)
-- [Integration Testing for Redis using Testcontainers in Spring Boot](https://medium.com/@gourav2824/integration-testing-for-redis-using-testcontainers-in-spring-boot-3ea2ceb5cad7)
+- [Integration Testing for Redis using Testcontainers in Spring Boot @ Medium](https://medium.com/@gourav2824/integration-testing-for-redis-using-testcontainers-in-spring-boot-3ea2ceb5cad7)
+- [Unable to get result from the Redis using Crud Repository in Spring Boot?](https://stackoverflow.com/questions/53121627/unable-to-get-result-from-the-redis-using-crud-repository-in-spring-boot)
 
 Gaming
 
@@ -110,6 +111,6 @@ Gaming
 
 Authentication
 
-- [Passkeys: Goodbye Passwords, Hello Security! (SpringOne) - YouTube](https://www.youtube.com/watch?v=nsofIV11xXY)
+- [Passkeys: Goodbye Passwords, Hello Security! (SpringOne) @ YouTube](https://www.youtube.com/watch?v=nsofIV11xXY)
 - https://webauthn.io
 - https://passkeys.dev
