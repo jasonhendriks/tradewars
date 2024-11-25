@@ -89,7 +89,7 @@
         <dependency>
             <groupId>org.webjars.npm</groupId>
             <artifactId>hyperscript.org</artifactId>
-            <version>0.9.12</version>
+            <version>0.9.13</version>
         </dependency>
 
         <!-- Functional Testing -->
