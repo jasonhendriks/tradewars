@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-class LoginController {
+class LoginEndpoint {
 
     @RequestMapping("/login")
     public String login() throws InterruptedException {

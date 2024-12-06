@@ -1,21 +1,36 @@
 package ca.hendriks.tradewars.security.user;
 
-import org.springframework.data.redis.core.RedisHash;
-import org.springframework.data.redis.core.index.Indexed;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 import java.util.Objects;
 
-@RedisHash
-public record User(
-        @Indexed
-        String id,
-        @Indexed
-        String email,
-        String password,
-        boolean disabled,
-        boolean accountExpired,
-        boolean accountLocked,
-        boolean credentialsExpired) {
+@Entity
+@Table(name = "users")
+public class User {
+
+        @Id
+        private String id;
+        private String email;
+        private String password;
+        private boolean disabled;
+        private boolean accountExpired;
+        private boolean accountLocked;
+        private boolean credentialsExpired;
+
+        User() {
+        }
+
+        public User(final String id, final String email, final String passwordEncoded, final boolean disabled) {
+                this.id = id;
+                this.email = email;
+                this.password = passwordEncoded;
+                this.disabled = disabled;
+                this.accountExpired = false;
+                this.accountLocked = false;
+                this.credentialsExpired = false;
+        }
 
         @Override
         public boolean equals(final Object o) {
@@ -28,6 +43,41 @@ public record User(
         @Override
         public int hashCode() {
                 return Objects.hash(id);
+        }
+
+        @Override
+        public String toString() {
+                return "User{" +
+                        "id='" + id + '\'' +
+                        '}';
+        }
+
+        public String id() {
+                return id;
+        }
+
+        public String email() {
+                return email;
+        }
+
+        public String password() {
+                return password;
+        }
+
+        public boolean disabled() {
+                return disabled;
+        }
+
+        public boolean accountExpired() {
+                return accountExpired;
+        }
+
+        public boolean accountLocked() {
+                return accountLocked;
+        }
+
+        public boolean credentialsExpired() {
+                return credentialsExpired;
         }
 
 }

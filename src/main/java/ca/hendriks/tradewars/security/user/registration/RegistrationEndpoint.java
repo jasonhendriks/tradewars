@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-class RegistrationController {
+class RegistrationEndpoint {
 
-    private final UserCreationService userCreationService;
+    private final UserRegistrar userRegistrar;
 
-    RegistrationController(final UserCreationService userCreationService) {
-        this.userCreationService = userCreationService;
+    RegistrationEndpoint(final UserRegistrar userRegistrar) {
+        this.userRegistrar = userRegistrar;
     }
 
     @RequestMapping(value = "signup")
@@ -27,7 +27,7 @@ class RegistrationController {
             return new ModelAndView("registrationPage", "user", user);
         }
         try {
-            userCreationService.registerNewUser(user);
+            userRegistrar.registerNewUser(user);
         } catch (final EmailExistsException e) {
             result.addError(new FieldError("user", "email", e.getMessage()));
             return new ModelAndView("registrationPage", "user", user);

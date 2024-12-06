@@ -29,7 +29,7 @@ class PersistedUserDetailsService implements UserDetailsService {
     }
 
     @Override
-    public UserDetails loadUserByUsername(final String email) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(final String email) {
         return userRepository.findByEmail(email)
                 .map(this::convert)
                 .orElseThrow(() -> createUsernameNotFoundException(email));
@@ -44,7 +44,7 @@ class PersistedUserDetailsService implements UserDetailsService {
         return org.springframework.security.core.userdetails.User.builder()
                 .username(user.email())
                 .password(user.password())
-                .disabled(user.disabled())
+                .disabled(false)
                 .accountExpired(user.accountExpired())
                 .accountLocked(user.accountLocked())
                 .credentialsExpired(user.credentialsExpired())

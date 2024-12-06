@@ -10,6 +10,7 @@ Try it out online: https://tradewars-c2d3d73aea9e.herokuapp.com
 - [JDK v17](https://openjdk.org/projects/jdk/17/)
 - [Git](https://www.atlassian.com/git/tutorials/install-git)
 - [Apache Maven v3.9](https://maven.apache.org/install.html)
+- [PostgreSQL](https://devcenter.heroku.com/articles/local-setup-heroku-postgres)
 - [Redis](https://redis.io/try-free/)
 - [Optional] [Heroku CLI client](https://devcenter.heroku.com/articles/heroku-cli)
 
@@ -99,6 +100,7 @@ Redis
 - [EmbeddedRedis Support For Spring Framework](http://www.kenansevindik.com/en/embeddedredis-support-for-spring-framework/)
 - [Integration Testing for Redis using Testcontainers in Spring Boot @ Medium](https://medium.com/@gourav2824/integration-testing-for-redis-using-testcontainers-in-spring-boot-3ea2ceb5cad7)
 - [Unable to get result from the Redis using Crud Repository in Spring Boot?](https://stackoverflow.com/questions/53121627/unable-to-get-result-from-the-redis-using-crud-repository-in-spring-boot)
+- [Object Mapping & Redis Repositories](https://redis.io/learn/develop/java/redis-and-spring-course/lesson_3)
 
 Gaming
 
@@ -107,7 +109,8 @@ Gaming
 - http://wiki.classictw.com/index.php/Gypsy%27s_Big_Dummy%27s_Guide_to_TradeWars_Text
 - https://www.reddit.com/r/Tradewars/comments/ztyejd/universe_generation/
 - https://jgrapht.org/guide/UserOverview
-- https://jgrapht.org/javadoc/org.jgrapht.core/org/jgrapht/generate/WattsStrogatzGraphGenerator.html
+- [Class WattsStrogatzGraphGenerator<V,E> @ JgraphT.org](https://jgrapht.org/javadoc/org.jgrapht.core/org/jgrapht/generate/WattsStrogatzGraphGenerator.html)
+- [Game Beginnings: Trade Wars 2002](https://www.youtube.com/watch?v=LyvuUauuuyE)
 
 Authentication
 

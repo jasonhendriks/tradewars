@@ -1,6 +1,15 @@
 spring:
   thymeleaf:
     cache: false
+  datasource:
+    url: "${JDBC_DATABASE_URL}"
+  r2dbc:
+    url: "r2dbc:${DATABASE_URL}"
   data:
     redis:
       url: "${REDIS_URL}"
+  jpa:
+    generate-ddl: true
+    open-in-view: false
+  logging:
+    com.zaxxer.hikari.pool.HikariPool: ERROR
