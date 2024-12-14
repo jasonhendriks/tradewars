@@ -1,4 +1,4 @@
-package ca.hendriks.tradewars.security.user;
+package ca.hendriks.tradewars.web.security.user;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

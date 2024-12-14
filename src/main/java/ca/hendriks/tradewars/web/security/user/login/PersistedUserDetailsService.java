@@ -1,7 +1,7 @@
-package ca.hendriks.tradewars.security.user.login;
+package ca.hendriks.tradewars.web.security.user.login;
 
-import ca.hendriks.tradewars.security.user.User;
-import ca.hendriks.tradewars.security.user.UserRepository;
+import ca.hendriks.tradewars.web.security.user.User;
+import ca.hendriks.tradewars.web.security.user.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.GrantedAuthority;

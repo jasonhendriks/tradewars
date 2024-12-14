@@ -1,4 +1,4 @@
-package ca.hendriks.tradewars.game;
+package ca.hendriks.tradewars.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

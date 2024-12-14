@@ -1,4 +1,4 @@
-package ca.hendriks.tradewars.security;
+package ca.hendriks.tradewars.web.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

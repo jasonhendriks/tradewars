@@ -1,4 +1,4 @@
-package ca.hendriks.tradewars.security.user;
+package ca.hendriks.tradewars.web.security.user;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

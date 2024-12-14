@@ -1,4 +1,4 @@
-package ca.hendriks.tradewars.security.user.registration;
+package ca.hendriks.tradewars.web.security.user.registration;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

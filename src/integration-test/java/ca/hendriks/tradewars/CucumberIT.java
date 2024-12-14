@@ -1,6 +1,6 @@
 package ca.hendriks.tradewars;
 
-import ca.hendriks.tradewars.security.user.UserRepository;
+import ca.hendriks.tradewars.web.security.user.UserRepository;
 import io.cucumber.spring.CucumberContextConfiguration;
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;

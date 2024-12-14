@@ -1,4 +1,4 @@
-package ca.hendriks.tradewars.security.user.login;
+package ca.hendriks.tradewars.web.security.user.login;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 class LoginEndpoint {
 
     @RequestMapping("/login")
-    public String login() throws InterruptedException {
-        Thread.sleep(1000);
+    public String login() {
         return "loginPage";
     }
 
